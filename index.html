@@ -209,6 +209,20 @@
         </div>
     </div>
 
+        <div class="form">
+        <div class="form_inner inner"></div>
+        <form action="{{ url_for('read_form')}}" method="post">
+            <legend><h2><b>Запишитесь на прием прямо сейчас</b></h2></legend>
+            <label for="name"><h5><b>Имя</b></h5></label>
+            <input type="text" name="name" id="name" required>
+            <label for="phone_number"><h5><b>Номер телефона</b></h5></label>
+            <input type="text" name="phone_number" id="phone_number" required>
+            <label for="text"><h5><b>Дополнительная информация</b></h5></label>
+            <textarea type="text" name="text" id="text"></textarea>
+            <button type="submit" class="btn btn-primary"><h6 href="#">Отправить</h6></button>
+        </form>
+    </div>
+
     <footer>
         <div class="footer_inner inner">
             <h2 class="title_section">Дополнительная информация</h2>
